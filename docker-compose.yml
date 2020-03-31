@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  node-template-api:
+    image: "node-template-api:0.0.1"
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    networks:
+      - nta
+networks:
+  nta: {}

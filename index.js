@@ -30,5 +30,9 @@ app.use('/users', require('./routes/users'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server listening on port: ${port}`);
+  console.log(`
+  Server listening on port: ${port}
+  Visit http://localhost:3000/api-docs
+  `
+  );
 });
